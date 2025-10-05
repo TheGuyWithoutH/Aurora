@@ -6,10 +6,11 @@ To install dependencies:
 bun install
 ```
 
-To run:
+To run: (you will need to run the server and share it through ngrok)
 
 ```bash
-bun run src/server.ts
+cd apps/internal-api
+bun dev
 ```
 
 This project was created using `bun init` in bun v1.2.23. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
