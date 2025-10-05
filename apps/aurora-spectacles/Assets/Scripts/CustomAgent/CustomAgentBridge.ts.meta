@@ -1,0 +1,44 @@
+- !<AssetImportMetadata/0c9b31a4-ff58-4aff-a42f-1fdb58bd33dd>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> bd7ed9d1-9d35-46d2-ae1c-64bb568a19d8
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> bd7ed9d1-9d35-46d2-ae1c-64bb568a19d8
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 504e84e5-a71f-4e90-81f6-5c04dc083459
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/504e84e5-a71f-4e90-81f6-5c04dc083459>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 9ef4b9ba-6c91-4241-ad72-66e7711c99df
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    customAgent: false
+    sphereController: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - customAgent: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      sphereController: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType customAgent
+    - // @input AssignableType_1 sphereController

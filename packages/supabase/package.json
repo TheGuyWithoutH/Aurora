@@ -1,0 +1,19 @@
+{
+  "name": "@aurora/supabase",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@aurora/schema": "workspace:*",
+    "@supabase/supabase-js": "^2.48.1",
+    "effect": "^3.18.2"
+  }
+}

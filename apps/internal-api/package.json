@@ -1,0 +1,24 @@
+{
+  "name": "internal-api",
+  "module": "src/server.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/server.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@aurora/ai": "workspace:*",
+    "@aurora/rpc": "workspace:*",
+    "@aurora/supabase": "workspace:*",
+    "@effect/platform": "^0.92.1",
+    "@effect/platform-bun": "^0.81.1",
+    "@effect/platform-node": "^0.98.3",
+    "@effect/rpc": "^0.71.0",
+    "effect": "^3.18.2"
+  }
+}
