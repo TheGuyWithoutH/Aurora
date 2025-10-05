@@ -3,7 +3,7 @@ import {
   OpenRouterLanguageModel,
 } from "@effect/ai-openrouter";
 import { LanguageModel } from "@effect/ai";
-import { Context, Effect, Layer, Redacted } from "effect";
+import { Config, Context, Effect, Layer, Redacted } from "effect";
 import type { HttpClient } from "@effect/platform/HttpClient";
 import type { AiError } from "@effect/ai/AiError";
 import type { MessageEncoded } from "@effect/ai/Prompt";
@@ -130,9 +130,7 @@ const generateTextWithHistory = (
 // `LanguageModel` and requires an `OpenAiClient`
 const GrokModel = OpenRouterLanguageModel.model("x-ai/grok-4-fast", {});
 const OpenRouter = OpenRouterClient.layer({
-  apiKey: Redacted.make(
-    "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"
-  ),
+  apiKey: Redacted.make(process.env.OPENROUTER_API_KEY ?? ""),
 });
 
 const makeAgent = Effect.gen(function* () {
